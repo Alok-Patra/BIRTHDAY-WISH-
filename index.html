@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff4f7" />
+  <meta name="description" content="A tiny pastel birthday world made just for Ananya." />
+  <title>Happy Birthday, Ananya! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-doodles" aria-hidden="true"><span>♡</span><span>✿</span><span>✧</span><span>୨୧</span><span>♡</span><span>✿</span></div>
+  <div class="topbar">
+    <a class="brand" href="#home" aria-label="Birthday home"><span class="brand-heart">♡</span> a little day for Ananya</a>
+    <div class="music-controls" id="musicControls" aria-label="Birthday music controls">
+      <button class="music-toggle" id="musicToggle" aria-pressed="false" type="button" aria-label="Play or pause birthday music">
+        <span class="music-icon">♫</span><span id="musicLabel">Birthday music</span>
+      </button>
+      <button class="music-close" id="musicClose" type="button" aria-label="Turn off music and close music controls" title="Turn music off">×</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE BIRTHDAY MAGIC <span class="eyebrow-line"></span></div>
+      <div class="hero-sparkle sparkle-a">✦</div><div class="hero-sparkle sparkle-b">✧</div>
+      <p class="small-intro">a tiny corner of the internet, made just for you</p>
+      <h1>Happy Birthday,<br><em>Ananya ♡</em></h1>
+      <p class="hero-copy">A little page full of love, tiny surprises, and all the soft, happy things you deserve. Today, the universe is giving you an extra <span class="highlight">little sparkle.</span></p>
+      <button class="primary-button" id="openGiftTop" type="button">Open your birthday magic <span>↗</span></button>
+      <div class="scroll-cue"><span></span> psst… there’s more below</div>
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    </section>
+
+    <section class="note-section section" id="note">
+      <div class="section-kicker">01 · A LITTLE NOTE, JUST FOR YOU</div>
+      <div class="note-card">
+        <div class="note-decoration">❝</div>
+        <p class="script">dear Ananya, ♡</p>
+        <h2>May this new chapter<br>be <em>soft on your heart.</em></h2>
+        <p class="note-copy">I hope this year leaves little flowers in your path, gives you reasons to smile on ordinary days, and turns a few of your quietest wishes into real-life magic.</p>
+        <p class="note-copy">Keep being your lovely self. May you find kind people, unexpected happiness, late-night laughter, pretty little moments, and a hundred reasons to feel proud of the person you are becoming.</p>
+        <div class="signature">someone who wishes you the sweetest things <span>✦</span></div>
+        <div class="note-flower" aria-hidden="true">✿</div>
+      </div>
+    </section>
+
+
+    <section class="cake-section section" id="cake">
+      <div class="section-kicker">02 · MAKE A WISH, CUTIE</div>
+      <h2 class="section-title">Make a wish, <em>birthday girl.</em></h2>
+      <p class="section-subtitle">Close your eyes for a second, wish for something beautiful, and tap the candles out. 🎂</p>
+      <div class="cake-stage" id="cakeStage">
+        <div class="cake-spark cake-spark-one">✦</div>
+        <div class="cake-spark cake-spark-two">✧</div>
+        <div class="cake">
+          <div class="candles" id="candles">
+            <button class="candle" type="button" aria-label="Blow out candle 1"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 2"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 3"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 4"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle" type="button" aria-label="Blow out candle 5"><span class="flame"></span><span class="wick"></span></button>
+          </div>
+          <div class="cake-top"><span class="icing-drip drip-one"></span><span class="icing-drip drip-two"></span><span class="icing-drip drip-three"></span><span class="cake-berry berry-one">♥</span><span class="cake-berry berry-two">♥</span></div>
+          <div class="cake-layer layer-top"></div><div class="cake-layer layer-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <p class="candles-status" id="candlesStatus" aria-live="polite">Ananya, tap each candle… or blow them all out at once. Your wish is safe here ♡</p>
+      <div class="cake-actions">
+        <button class="primary-button" id="blowCandles" type="button">💨 Blow out the candles</button>
+        <button class="secondary-button" id="relightCandles" type="button">Light them again ↻</button>
+      </div>
+      <div class="wish-reveal" id="wishReveal" hidden>
+        <span class="wish-star">✦</span>
+        <p class="script">Wish made!</p>
+        <h3>May every little dream<br>find its <em>way to you.</em></h3>
+        <p>ANANYA, may this new year of your life bring you more joy than you imagine. ✨</p>
+      </div>
+    </section>
+
+    <section class="gift-section section" id="gift">
+      <div class="section-kicker">03 · A PRESENT WITH A LITTLE HEART</div>
+      <h2 class="section-title">A tiny gift, <em>just for you.</em></h2>
+      <p class="section-subtitle">Psst… there’s a little message hiding inside. Tap the bow. 🎀</p>
+      <button class="gift-wrap" id="giftBox" type="button" aria-label="Open your birthday gift">
+        <span class="gift-glow"></span>
+        <span class="gift-box">
+          <span class="gift-lid"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span>
+          <span class="gift-bow bow-left"></span><span class="gift-bow bow-right"></span>
+        </span>
+        <span class="gift-tap">tap the bow ♡</span>
+      </button>
+      <div class="surprise-message" id="surpriseMessage" aria-live="polite" hidden>
+        <div class="surprise-heart">♡</div>
+        <p class="script">a little wish for you</p>
+        <h3>May life surprise you<br>in the <em>loveliest ways.</em> ♡</h3>
+        <p>Some people make the world feel a little less ordinary just by being in it. I hope you always remember that you’re one of those people. Never forget how much light you bring just by being yourself.</p>
+        <div class="wish-end">You deserve all the good things. ✨</div>
+      </div>
+    </section>
+
+
+    <!-- <section class="quiz-section section" id="little-game">
+      <div class="section-kicker">04 / A LITTLE GAME</div>
+      <h2 class="section-title">A tiny question, <em>just for fun.</em></h2>
+      <p class="section-subtitle">Choose the answer that feels right. There are no wrong answers here. 🎉</p>
+      <div class="quiz-card">
+        <div class="quiz-number">A QUESTION FOR YOU</div>
+        <h3>What should your birthday be filled with?</h3>
+        <div class="quiz-options" id="quizOptions">
+          <button type="button" class="quiz-option" data-answer="adventure">✨ Little adventures</button>
+          <button type="button" class="quiz-option" data-answer="laughter">😂 Endless laughter</button>
+          <button type="button" class="quiz-option" data-answer="love">🤗 Good friends and good people</button>
+          <button type="button" class="quiz-option" data-answer="everything">🌈 All of the above</button>
+        </div>
+        <p class="quiz-result" id="quizResult" aria-live="polite" hidden></p>
+      </div>
+    </section> -->
+
+
+    <section class="shayari-section section" id="tareef">
+      <div class="section-kicker">04 · EK CHHOTI SI TAREEF ♡</div>
+      <h2 class="section-title">Kuch tareef ho jaaye, <em>MALIK</em></h2>
+      <p class="section-subtitle">Bas ek tap… phir tumhari taaref suru. 🙈💗</p>
+      <button class="primary-button shayari-open-button" id="openShayari" type="button">KUCH TAREEF HO JAE ✨ <span>♡</span></button>
+      <article class="shayari-card" id="shayariCard" hidden aria-live="polite">
+        <div class="shayari-card-sparkle" aria-hidden="true">✦　♡　✧</div>
+        <p class="script">sirf tumhare liye… ♡</p>
+        <h3>Chehra jaise chaand liye phirti ho,</h3>
+        <div class="shayari-lines">
+          <p>Chehra jaise chaand liye phirti ho,</p>
+          <p>Kadmon mein aasmaan liye phirti ho.</p>
+          <p>Mujhe maarne ka iraada kar liya hai kya,</p>
+          <p>Khuli Zulfon ka janjal liye phirti ho.</p>
+          <p>Mathe par lagakar chhoti si bindi,</p>
+          <p>Aankhein bhi kamaal liye phirti ho.</p>
+          <p>Waise bhi nazrein tumse hat-ti nahi,</p>
+          <p>Aur tum ho ki til wala gaal liye phirti ho. ♡</p>
+        </div>
+        <div class="shayari-signature">— AAINA DEKHNE MT JAO RAAT HO GAYI HAI🙈💗</div>
+        <button class="secondary-button" id="closeShayari" type="button">Awww, phir se chupo 🙈</button>
+      </article>
+    </section>
+
+    <section class="shayari-section section" id="ek-aur-tareef">
+      <div class="section-kicker">05 · EK AUR SHAYARI, SIRF TUMHARE LIYE ♡</div>
+      <h2 class="section-title">Tumhari tareef mein, <em>kuch aur lafz.</em></h2>
+      <p class="section-subtitle">Kuch aur lafz Arz Kiya hai  💗</p>
+      <button class="primary-button shayari-open-button" id="openShayariTwo" type="button">KUCH AUR LAFZ 🌷 <span>♡</span></button>
+      <article class="shayari-card" id="shayariCardTwo" hidden aria-live="polite">
+        <div class="shayari-card-sparkle" aria-hidden="true">✦　♡　✧</div>
+        <p class="script">IRSHAD IRSHAD BOLO ♡</p>
+        <h3>Tum hanso toh din bhi gulzaar lage,</h3>
+        <div class="shayari-lines">
+          <p>Tum hanso toh din bhi gulzaar lage,</p>
+          <p>Tum bolo toh har lafz pyaar lage.</p>
+          <p>Kya likhun main tumhari khoobsurati par,</p>
+          <p>Har lafz tumhare saamne bekaar lage.</p>
+          <p>Bindi, jhumke aur woh pyaari si muskaan,</p>
+          <p>Jaise chaand ko mil gaya ho apna aasmaan.</p>
+          <p>Bas yun hi hamesha muskurati rehna,</p>
+          <p>Yhu muskurana hi to hai tumari asli pehchan. ♡</p>
+        </div>
+        <div class="shayari-signature">— Aacha na lage to kuch mt bolna , Ananya 💗</div>
+        <button class="secondary-button" id="closeShayariTwo" type="button">Awww, phir se chhupao 🙈</button>
+      </article>
+    </section>
+
+    <section class="photo-gallery section" id="ananya-photos" aria-label="Ananya's photo gallery">
+      <div class="section-kicker">06 · BOHOT MUSKIL SE MILA  🎀♡</div>
+      <h2 class="section-title">A little gallery of <em>your lovely self.</em></h2>
+      <!-- <p class="section-subtitle">Yahan uski favourite pictures add karna. 💗 Photo placeholders ko apni pictures se replace kar sakte ho.</p> -->
+      <div class="photo-grid">
+        <!-- PHOTO PLACEHOLDER 1: replace this div with <img src="images/ananya-1.jpg" alt="Ananya smiling"> -->
+        
+<div class="photo-placeholder">
+  <img
+    src="./ananya-shayari-update/images/ananya-1.jpg"
+    alt="Ananya smiling"
+    class="ananya-photo"
+  />
+</div>
+
+        <!-- PHOTO PLACEHOLDER 2: replace this div with <img src="images/ananya-2.jpg" alt="Ananya's favourite photo"> -->
+          <div class="photo-placeholder">
+  <img
+    src="./ananya-shayari-update/images/ananya-2.png"
+    alt="Ananya smiling"
+    class="ananya-photo"
+  />
+</div>
+        <!-- PHOTO PLACEHOLDER 3: replace this div with <img src="images/ananya-3.jpg" alt="A lovely memory with Ananya"> -->
+                <div class="photo-placeholder">
+  <img
+    src="./ananya-shayari-update/images/ananya-3.png"
+    alt="Ananya smiling"
+    class="ananya-photo"
+  />
+</div>
+      </div>
+  
+
+    <section class="little-things section" aria-label="Little birthday wishes">
+      <div class="section-kicker">07 · THE LITTLE THINGS I WISH FOR YOU</div>
+      <h2 class="section-title">A pocketful of <em>happy things.</em></h2>
+      <p class="section-subtitle">Because you deserve more than one birthday wish. ♡</p>
+      <div class="wish-grid">
+        <article class="wish-card wish-card-pink"><span class="wish-emoji">🌷</span><h3>Soft days</h3><p>More peace in your heart, and less overthinking at night.</p></article>
+        <article class="wish-card wish-card-lilac"><span class="wish-emoji">🦋</span><h3>Brave dreams</h3><p>May you Go ahead and explore whatever your heart desires. Don’t hold yourself back—discover everything you’ve ever wanted to.</p></article>
+        <article class="wish-card wish-card-yellow"><span class="wish-emoji">🍰</span><h3>Sweet surprises</h3><p>Little moments that make you smile for no reason at all.</p></article>
+      </div>
+    </section>
+
+    <section class="closing-section section">
+      <div class="closing-star">✦</div>
+      <p class="script">before you go… one last little thing</p>
+      <h2>Main sunta rahunga, tum sunaya karo,<br>Tum muskurati hui achhi lagti ho,<br>bas muskuraya karo…<br><br>Pairo mein payal, maathe par bindiya,<br>kaano mein jhumke sajaya karo.<br><em>Tum muskurati hui achhi lagti ho… bas muskuraya karo. ♡</em><br><br><span class="poem-signature">— for Ananya</span></h2>
+      <p>I hope your birthday feels like a warm hug, your year is full of tiny miracles, and you always have something beautiful to look forward to.</p>
+      <div class="hearts-row" aria-hidden="true"><span>♡</span><span>♥</span><span>♡</span></div>
+      <button class="text-button" id="celebrateButton" type="button">send some birthday sparkles <span>✧</span></button>
+    </section>
+  </main>
+
+  <footer><span>made with a little extra love for <b>Ananya</b> ♡</span><span class="footer-year">keep being your own kind of magic ✿</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
